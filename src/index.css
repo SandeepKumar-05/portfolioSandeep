@@ -1,12 +1,12 @@
-:root{
-  --mainBg:'#F6F6F6';
-  --navBg:'#FFFFFF';
-  --navColor:'#222222';
-   
+
+:root {
+  --mainBg: #F6F6F6;
+  --navBg: #FFFFFF;
+  --navColor: #222222;
+  --fontStack: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body{
-  background:var(--mainBg) ;
+body {
+  background: var(--mainBg);
   padding: 0;
   margin: 0;
-  font-family: "Mona Sans""Helvetica Neue" Helvetica Arial ,sans-serif;
 }

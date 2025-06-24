@@ -1,31 +1,28 @@
-header{
+.nav{
     background: var(--navBg);
-    color: var(--navColor) ;
-    width: 100%;
-    height: 50px;
-    position: relative;
-    top:10px;
-    /* right: 5px;
-    left: 5px; */
+    height: 30px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    overflow-x: hidden;
+    padding: 10px 5px 10px 5px;
+    margin: 3px 5px 0px 3px ;
+    color: var(--navColor);
+    font-family: var(--fontStack);
     border: 1px solid var(--navBg);
-    border-radius: 15px;
+    border-radius: 10px;
 }
-.logo{
-    align-items: center;
-    display: flex;
-    padding: 10px;
+.nav_logo a{
+    text-decoration: none;
+    color: var(--navColor);
 }
-.logo h1{
-    font-size: 1.2rem;
-}
-.connect{
-    padding: 10px;
+.nav_items{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
 }
-.connect h5{
-    font-size: 1rem;
+.nav_items a{
+    text-decoration: none;
+    color: var(--navColor);
 }
