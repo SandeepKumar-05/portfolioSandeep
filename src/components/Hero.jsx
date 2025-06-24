@@ -16,20 +16,23 @@ const Hero = () => {
                 ],
                 autoStart: true,
                 loop: true,
-                delay: 70,
-                deleteSpeed: 30,
+                delay: 100,
+                deleteSpeed: 100,
                 cursorClassName: 'typewriter-cursor'
                 }}
             />
             
             </div>
+             <div className="heroSubDiv">
+            <div className="heroSubHeading">
+                    <p>I'm a Frontend Developer and AI/ML enthusiast who loves building intuitive user interfaces and smart, data-driven applications using React, Python, and deep learning. </p>
+            </div>
+            <button className="cntButton">
+                Contact
+            </button>
         </div>
-        <div className="heroSubHeading">
-                <p>I'm a Frontend Developer and AI/ML enthusiast who loves building intuitive user interfaces and smart, data-driven applications using React, Python, and deep learning. </p>
         </div>
-        <button className="cntButton">
-            Contact
-        </button>
+       
         <div className="heroImg">
             <img src={profilePic} alt="img" />
         </div>

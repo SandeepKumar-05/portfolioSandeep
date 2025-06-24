@@ -13,18 +13,21 @@
 .heroContent {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   height: 100%;
+  padding: 0 5%;
   position: relative;
-  top: 8%;
+  top: 5%;
+  
 }
 
 .typewriterContainer {
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .typewriterContainer h1 {
-  font-size: 6rem; /* Fixed large size */
+  font-size: clamp(3.5rem, 6vw, 6rem);
   color: var(--navColor);
   margin-bottom: 1rem;
   font-weight: 600;
@@ -32,47 +35,47 @@
 }
 
 .Typewriter {
-  font-size: 6rem; /* Fixed large size */
+  font-size: clamp(3.5rem, 6vw, 6rem);
   color: var(--navColor);
   font-weight: 600;
   line-height: 1.1;
   display: inline-block;
-  height: 6.5rem; /* Fixed height to prevent layout shift */
+  min-height: 6.5rem;
   width: 300px;
 }
 
 .typewriter-cursor {
   color: #ff6b6b;
-  font-size: 6rem;
+  font-size: clamp(3.5rem, 6vw, 6rem);
 }
-
-/* Fixed Position Elements */
+.heroSubDiv{
+    position: absolute;
+    top: 48%;
+}
+/* Content Positioning */
 .heroSubHeading {
-  position: absolute;
-  bottom: 35%;
-  left: 5%;
   max-width: 600px;
+  margin: 2rem 0;
 }
 
 .heroSubHeading p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
   line-height: 1.6;
   color: #6c757d;
   margin: 0;
 }
 
 .cntButton {
-  position: absolute;
-  bottom:26%;
-  left: 5%;
   background: #212529;
   color: white;
   border: none;
   border-radius: 20px;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
+  padding: clamp(0.8rem, 1.1vw, 1rem) clamp(1.5rem, 2.5vw, 2.5rem);
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
   cursor: pointer;
   transition: all 0.3s ease;
+  width: fit-content;
+  margin-top: 10px;
 }
 
 .cntButton:hover {
@@ -81,95 +84,87 @@
   box-shadow: 0 6px 20px rgba(255,107,107,0.3);
 }
 
+/* Image Container */
 .heroImg {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .heroImg img {
   width: 100%;
   max-width: 500px;
-  height: 600px;
+  height: clamp(400px, 60vh, 600px);
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1600px) {
-  .typewriterContainer h1,
-  .Typewriter,
-  .typewriter-cursor {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .typewriterContainer h1,
-  .Typewriter,
-  .typewriter-cursor {
-    font-size: 4rem;
-  }
-  
-  .heroSubHeading {
-    bottom: 15%;
-  }
-}
-
-@media (max-width: 992px) {
+@media (max-width: 1080px) {
   .heroSection {
-    grid-template-columns: 1fr;
     background: #f8f9fa;
-    padding-top: 5rem;
-    text-align: center;
+    gap: 2rem;
+    width: 100vw;
+    
   }
-  
+
   .heroContent {
     order: 2;
-    margin-top: 2rem;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
-  
-  .typewriterContainer h1,
-  .Typewriter,
-  .typewriter-cursor {
-    font-size: 3.5rem;
+
+  .typewriterContainer {
+    text-align: center;
+    width: 100%;
   }
-  
+
+  .Typewriter {
+    display: flex;
+    justify-content: center;
+  }
+
   .heroSubHeading {
-    position: static;
     max-width: 100%;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    padding: 0 5%;
+    text-align: center;
   }
-  
+
   .cntButton {
-    position: static;
-    margin: 0 auto 3rem;
+    margin: 0 auto;
   }
-  
+
   .heroImg {
-    order: 1;
-    margin-bottom: 2rem;
+    display: none;
   }
-  
-  .heroImg img {
-    max-width: 400px;
-  }
+
+  /* .heroImg img {
+    height: clamp(300px, 50vh, 500px);
+  } */
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 3rem 5% 2rem;
+  }
+
   .typewriterContainer h1,
   .Typewriter,
   .typewriter-cursor {
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
   }
-  
+
   .heroSubHeading p {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 3.5vw, 1rem);
   }
-  
+
   .heroImg img {
     max-width: 300px;
+    height: 350px;
   }
 }
