@@ -1,0 +1,158 @@
+/* Hero Section - Split Layout */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  /* background: linear-gradient(to right, #f8f9fa 50%, #ffffff 50%); */
+  font-family: var(--fontStack);
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.typewriter-container {
+  margin-bottom: 0.5rem; /* Reduced space between heading and typewriter */
+  min-height: 120px; /* Fixed height to prevent layout shift */
+  display: flex;
+  flex-direction: column;
+}
+
+.typewriter-container h1 {
+  font-size: clamp(4rem, 5vw, 3.5rem);
+  color: var(--navColor);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.Typewriter {
+  font-size: clamp(4rem, 4vw, 3rem);
+  color:var(--navColor);
+  font-weight: 700;
+  min-height: 4rem;
+  display: inline-block; /* Ensures proper alignment */
+}
+
+.typewriter-cursor {
+  color: #ff6b6b;
+  font-weight: 400;
+}
+
+.heroSubHeading {
+  max-width: 600px;
+  margin: 1.5rem 0 2.5rem;
+  padding-right: 2rem;
+ 
+}
+
+.heroSubHeading p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #6c757d;
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cta-button {
+  background: #212529;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+  background: #ff6b6b;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255,107,107,0.3);
+}
+
+.heroImg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  position: relative;
+}
+
+.heroImg img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  animation: float 6s ease-in-out infinite;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    background: #f8f9fa;
+    padding-top: 5rem;
+    text-align: center;
+  }
+  
+  .hero-content {
+    padding-right: 0;
+    align-items: center;
+  }
+  
+  .heroSubHeading {
+    padding-right: 0;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .heroImg {
+    padding-left: 0;
+    margin-bottom: 3rem;
+  }
+  
+  .heroImg img {
+    max-width: 350px;
+  }
+  
+  .cta-button {
+    align-self: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroImg img {
+    max-width: 280px;
+  }
+  
+  .Typewriter {
+    min-height: 3.5rem;
+  }
+  
+  .heroSubHeading p {
+    font-size: 1rem;
+  }
+  
+  .typewriter-container {
+    min-height: 100px;
+  }
+}

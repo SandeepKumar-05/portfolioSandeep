@@ -3,9 +3,9 @@
     height: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px 5px 10px 5px;
-    margin: 3px 5px 0px 3px ;
+    margin: 3px 10px 0px 10px ;
     color: var(--navColor);
     font-family: var(--fontStack);
     border: 1px solid var(--navBg);
