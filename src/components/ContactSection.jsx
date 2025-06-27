@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/ContectSection.css'
-export default function ContectSection() {
+import '../styles/ContactSection.css'
+export default function ContactSection() {
   return (
     <section className='contSection'>
       <div className="contMainBox">
