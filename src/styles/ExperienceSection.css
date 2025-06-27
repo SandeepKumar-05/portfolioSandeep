@@ -1,0 +1,9 @@
+.expSection{
+    background: var(--mainBg);
+    font-family: var(--fontStack);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+    color: var(--navColor);
+}
