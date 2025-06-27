@@ -5,7 +5,7 @@
     font-family: var(--fontStack);
     background: var(--mainBg);
     top: 50px;
-    position: relative;
+    /* position: relative; */
 }
 .mainCont{
     width: 30%;
