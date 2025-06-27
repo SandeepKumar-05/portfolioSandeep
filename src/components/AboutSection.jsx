@@ -7,9 +7,7 @@ function AboutSection() {
             <div className="aboutSubCont">
                 <p>I’m a Frontend Developer with a passion for creating smart, user-friendly web interfaces.
                 Skilled in React, JavaScript, and modern UI design.
-                I integrate AI/ML models into real-time web apps using Flask, Node.js, and APIs.
-                From chatbots to intelligent dashboards, I build solutions that think and respond.
-                Focused on crafting seamless, high-performance, AI-powered digital experiences.</p>
+                I integrate AI/ML models into real-time web apps using Flask, Node.js, and APIs.</p>
             </div>
         </div>
         <div className="aboutSkills">
