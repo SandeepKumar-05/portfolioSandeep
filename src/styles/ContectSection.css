@@ -1,0 +1,46 @@
+.contSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--mainBg);
+    font-family: var(--fontStack);
+    padding: 6rem 3%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contMainBox {
+    width: 1400px; /* Updated width */
+    max-width: 100%; /* Ensures it doesn't overflow on smaller screens */
+    height: 600px;
+    background: #CED1FA;
+    border: 1px solid #CED1FA;
+    border-radius: 30px;
+    margin: 0 auto; /* Additional centering */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1300px) {
+    .contMainBox {
+        width: 90%; /* Adjusts width on slightly smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .contSection {
+        padding: 4rem 3%;
+    }
+    .contMainBox {
+        height: 500px; /* Adjusted height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .contSection {
+        padding: 3rem 3%;
+    }
+    .contMainBox {
+        height: 400px; /* Adjusted height for mobile */
+        border-radius: 20px;
+    }
+}
