@@ -16,7 +16,7 @@ function AboutSection() {
             </div>
             <div className="skillContents">
                 <div className="skill1">
-
+                    Ui Ux
                 </div>
                 <div className="skill2">Frontend</div>
                 <div className="skill3">Ai Ml Developer</div>
