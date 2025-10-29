@@ -1,13 +1,15 @@
-/* Base Styles */
+
 .heroSection {
-  min-height: 100vh;
+  min-height:95vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 0 3%;
-  background: linear-gradient(to right, #f8f9fa 50%, #ffffff 50%);
   position: relative;
   font-family: var(--fontStack);
+  box-sizing: border-box;
+  width: 100%;
+  
 }
 
 .heroContent {
@@ -89,7 +91,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
+
 }
 
 .heroImg img {

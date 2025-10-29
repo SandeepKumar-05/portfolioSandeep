@@ -1,29 +1,28 @@
 import React from 'react'
 import '../styles/AboutSection.css'
+
+import ScrollReveal from '../Animations/ScrollReveal'
+
 function AboutSection() {
   return (
     <section className="aboutSection">
         <div className="aboutContent">
             <div className="aboutSubCont">
-                <p>I’m a Frontend Developer with a passion for creating smart, user-friendly web interfaces.
-                Skilled in React, JavaScript, and modern UI design.
-                I integrate AI/ML models into real-time web apps using Flask, Node.js, and APIs.</p>
+                <ScrollReveal
+                    baseOpacity={0}
+                    enableBlur={true}
+                    baseRotation={5}
+                    blurStrength={10}
+                >
+                    I’m a Frontend Developer with a passion for creating smart, user-friendly web interfaces.
+                    Skilled in React, JavaScript, and modern UI design.
+                    I integrate AI/ML models into real-time web apps using Flask, Node.js, and APIs.
+                </ScrollReveal>
             </div>
         </div>
-        <div className="aboutSkills">
-            <div className="skillHeading">
-                <h1>How I Can <br /> Assist You</h1>
-            </div>
-            <div className="skillContents">
-                <div className="skill1">
-                    Ui Ux
-                </div>
-                <div className="skill2">Frontend</div>
-                <div className="skill3">Ai Ml Developer</div>
-                <div className="skill14">Data Analayis</div>
-            </div>
+       
 
-        </div>
+
     </section>
   )
 }

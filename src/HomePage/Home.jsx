@@ -5,6 +5,7 @@ import ProjectSection from '../components/ProjectSection'
 import ExperienceSection from '../components/ExperienceSection'
 import ContactSection from '../components/ContactSection'
 import ConnectSection from '../components/ConnectSection'
+import SkillSection from '../components/SkillSection'
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
     <div>
       <Hero/>
       <AboutSection/>
+      <SkillSection/>
       <ProjectSection/>
       <ExperienceSection/>
       <ContactSection/>

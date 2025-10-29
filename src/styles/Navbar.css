@@ -1,6 +1,12 @@
+nav{
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .nav{
-    background: var(--navBg);
-    height: 30px;
+    background:var(--navBg);
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -9,7 +15,10 @@
     color: var(--navColor);
     font-family: var(--fontStack);
     border: 1px solid var(--navBg);
-    border-radius: 10px;
+    border-radius: 50px;
+    width: 60%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 .nav_logo a{
     text-decoration: none;

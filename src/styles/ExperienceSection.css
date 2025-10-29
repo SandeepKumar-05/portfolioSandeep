@@ -3,7 +3,7 @@
     font-family: var(--fontStack);
     display: grid;
     width: 100%;
-    padding: 2rem 3%;
+    padding: 2rem 5%;
     color: var(--navColor);
     grid-template-columns: repeat(2, 1fr); /* Ensures exactly 2 columns */
     gap: 70px;
@@ -15,12 +15,12 @@
 
 .expMainCont, .expSubCont1, .expSubCont2, .expSubCont3 {
     width: 100%;
-    height: 250px;
+    height: 230px;
     background: white;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .expMainCont:hover, .expSubCont1:hover, .expSubCont2:hover, .expSubCont3:hover {
