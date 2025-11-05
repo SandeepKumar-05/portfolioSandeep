@@ -34,10 +34,39 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .cntContact{
-    width: 100%;
+    width: 98%;
     background: white;
-    height: 80px;
+    height: 30px;
     margin-top: 30px;
-    border-radius:20px ;
+    border-radius:50px ;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
 }
+.cntContact h1{
+    font-size: 1rem;
+}
+.cntContact p{
+    font-size: 0.8rem;
+}
+.cntContact button{
+    width: 80px;
+    height: 30px;
+    font-size: 0.6rem;
+    border: 1px solid transparent;
+    background: #000;
+    color: var(--mainBg);
+    border-radius: 15px;
+    transition: 1s step-end;
+}
+.cntContact button:hover{
+    transform: scale(1.05);
+}
+.mainCntCard h1{
+    font-size: 4rem;
+    font-family: var(--fontStack);
+    /* font-weight: 600; */
+}
+

@@ -23,7 +23,7 @@ nav{
 .nav_logo a{
     text-decoration: none;
     color: var(--navColor);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .nav_items{
@@ -37,4 +37,5 @@ nav{
     text-decoration: none;
     color: var(--navColor);
     font-weight: 400;
+    font-size: 0.8rem;
 }

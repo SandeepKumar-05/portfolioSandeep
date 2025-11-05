@@ -2,7 +2,7 @@
 :root {
   --mainBg: #F6F6F6;
   --navBg: #FFFFFF;
-  --navColor: #222222;
+  --navColor: #000000;
   --fontStack: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body {
