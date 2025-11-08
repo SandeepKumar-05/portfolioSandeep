@@ -32,6 +32,64 @@
     align-items: center;
     justify-content: center;
 }
+
+/* Experience Section Extra Styles */
+.expContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  height: 100%;
+}
+
+.expIcon {
+  flex-shrink: 0;
+  background-color: var(--navBg);
+  color: #007bff;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.expIcon svg {
+  transition: all 0.3s ease;
+}
+
+.expSubCont1:hover .expIcon svg,
+.expSubCont2:hover .expIcon svg,
+.expSubCont3:hover .expIcon svg,
+.expSubCont4:hover .expIcon svg {
+  transform: scale(1.2);
+  stroke: #007bff;
+}
+
+.expDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.expDetails h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.expDetails p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.expDuration {
+  font-size: 0.85rem;
+  color: #007bff;
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+
 /* Medium screens (tablets) - switch to 2 columns with adjusted gap */
 @media (max-width: 1024px) {
     .expSection {

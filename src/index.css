@@ -3,7 +3,7 @@
   --mainBg: #F6F6F6;
   --navBg: #FFFFFF;
   --navColor: #000000;
-  --fontStack: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --fontStack: "Nike Futura ND" ,Helvetica,Arial,sans-serif;
 }
 body {
   background: var(--mainBg);

@@ -24,7 +24,7 @@
 }
 
 .typewriterContainer {
-  margin-bottom: 2rem;
+  margin-bottom: 5px;
   position: relative;
 }
 
@@ -32,14 +32,14 @@
   font-size: clamp(3.5rem, 6vw, 6rem);
   color: var(--navColor);
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.1;
 }
 
 .Typewriter {
   font-size: clamp(3.5rem, 6vw, 6rem);
   color: var(--navColor);
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.1;
   display: inline-block;
   min-height: 6.5rem;
@@ -71,17 +71,16 @@
   background: #212529;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: clamp(0.8rem, 1.1vw, 1rem) clamp(1.5rem, 2.5vw, 2.5rem);
   font-size: clamp(1rem, 1.1vw, 1.1rem);
   cursor: pointer;
   transition: all 0.3s ease;
   width: fit-content;
-  margin-top: 10px;
 }
 
 .cntButton:hover {
-  background: #ff6b6b;
+  background: #2E9FB1;
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(255,107,107,0.3);
 }
