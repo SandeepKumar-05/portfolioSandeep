@@ -2,11 +2,13 @@ import React from 'react'
 import '../styles/ProjectSection.css'
 import Project1 from '../assets/project1.png'
 import Project2 from '../assets/project2.png'
+import {Link} from 'react-router-dom'
 function ProjectSection() {
   return (
     <section className="projectSection">
         <div className="mainCont">
             <h1>My Works</h1>
+            <Link to='/projects'>See More</Link>
         </div>
         <div className="sideCont">
             <div className="Cards1">

@@ -74,7 +74,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   flex-wrap: wrap;
 }
 
@@ -93,8 +93,8 @@
 
 /* Icon styling — slightly slanted by default */
 .social-link .icon {
-  width: 22px;
-  height: 22px;
+  width:50px;
+  height: 50px;
   transform: rotate(-15deg); /* 👈 Default slant */
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -130,14 +130,347 @@
   transform: translateY(-3px);
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
-  .subCntCard {
-    gap: 1.2rem;
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .connectSection {
+    padding: 1.5rem 4%;
   }
 
-  .social-link span {
+  .cntContainer {
+    gap: 40px;
+  }
+
+  .mainCntCard {
+    width: 550px;
+    height: 380px;
+    padding: 18px;
+  }
+
+  .subCntCard {
+    height: 380px;
+    padding: 18px;
+  }
+
+  .mainCntCard h1 {
+    font-size: 3.5rem;
+  }
+
+  .cntContact {
+    margin-top: 25px;
+    padding: 8px;
+  }
+
+  .cntContact h1 {
+    font-size: 0.95rem;
+  }
+
+  .cntContact p {
+    font-size: 0.75rem;
+  }
+
+  .cntContact button {
+    width: 75px;
+    height: 28px;
+    font-size: 0.55rem;
+  }
+
+  .subCntCard {
+    gap: 1.8rem;
+  }
+
+  .social-link {
+    font-size: 0.95rem;
+    gap: 0.5rem;
+  }
+
+  .social-link .icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .connectSection {
+    padding: 1.2rem 3%;
+  }
+
+  .cntContainer {
+    gap: 30px;
+  }
+
+  .mainCntCard {
+    width: 500px;
+    height: 360px;
+    padding: 16px;
+  }
+
+  .subCntCard {
+    height: 360px;
+    padding: 16px;
+  }
+
+  .mainCntCard h1 {
+    font-size: 3rem;
+  }
+
+  .cntContact {
+    margin-top: 20px;
+    padding: 7px;
+  }
+
+  .cntContact h1 {
     font-size: 0.9rem;
+  }
+
+  .cntContact p {
+    font-size: 0.7rem;
+  }
+
+  .cntContact button {
+    width: 70px;
+    height: 26px;
+    font-size: 0.5rem;
+  }
+
+  .subCntCard {
+    gap: 1.5rem;
+  }
+
+  .social-link {
+    font-size: 0.9rem;
+    gap: 0.4rem;
+  }
+
+  .social-link .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .connectSection {
+    padding: 1rem 2%;
+  }
+
+  .cntContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mainCntCard {
+    width: 100%;
+    height: 340px;
+    padding: 15px;
+  }
+
+  .subCntCard {
+    width: 100%;
+    height: 340px;
+    padding: 15px;
+  }
+
+  .mainCntCard h1 {
+    font-size: 2.5rem;
+  }
+
+  .cntContact {
+    margin-top: 15px;
+    padding: 6px;
+  }
+
+  .cntContact h1 {
+    font-size: 0.85rem;
+  }
+
+  .cntContact p {
+    font-size: 0.65rem;
+  }
+
+  .cntContact button {
+    width: 65px;
+    height: 24px;
+    font-size: 0.45rem;
+  }
+
+  .subCntCard {
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .social-link {
+    font-size: 0.85rem;
+    gap: 0.3rem;
+  }
+
+  .social-link .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .connectSection {
+    padding: 0.8rem 1%;
+  }
+
+  .cntContainer {
+    gap: 15px;
+  }
+
+  .mainCntCard {
+    height: 320px;
+    padding: 12px;
+  }
+
+  .subCntCard {
+    height: 320px;
+    padding: 12px;
+  }
+
+  .mainCntCard h1 {
+    font-size: 2rem;
+  }
+
+  .cntContact {
+    margin-top: 12px;
+    padding: 5px;
+  }
+
+  .cntContact h1 {
+    font-size: 0.8rem;
+  }
+
+  .cntContact p {
+    font-size: 0.6rem;
+  }
+
+  .cntContact button {
+    width: 60px;
+    height: 22px;
+    font-size: 0.4rem;
+  }
+
+  .subCntCard {
+    gap: 1rem;
+  }
+
+  .social-link {
+    font-size: 0.8rem;
+    gap: 0.25rem;
+  }
+
+  .social-link .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .connectSection {
+    padding: 0.6rem 0.5%;
+  }
+
+  .cntContainer {
+    gap: 10px;
+  }
+
+  .mainCntCard {
+    height: 300px;
+    padding: 10px;
+  }
+
+  .subCntCard {
+    height: 300px;
+    padding: 10px;
+  }
+
+  .mainCntCard h1 {
+    font-size: 1.8rem;
+  }
+
+  .cntContact {
+    margin-top: 10px;
+    padding: 4px;
+  }
+
+  .cntContact h1 {
+    font-size: 0.75rem;
+  }
+
+  .cntContact p {
+    font-size: 0.55rem;
+  }
+
+  .cntContact button {
+    width: 55px;
+    height: 20px;
+    font-size: 0.35rem;
+  }
+
+  .subCntCard {
+    gap: 0.8rem;
+  }
+
+  .social-link {
+    font-size: 0.75rem;
+    gap: 0.2rem;
+  }
+
+  .social-link .icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+  .connectSection {
+    padding: 0.5rem 0.5%;
+  }
+
+  .cntContainer {
+    gap: 8px;
+  }
+
+  .mainCntCard {
+    height: 280px;
+    padding: 8px;
+  }
+
+  .subCntCard {
+    height: 280px;
+    padding: 8px;
+  }
+
+  .mainCntCard h1 {
+    font-size: 1.5rem;
+  }
+
+  .cntContact {
+    margin-top: 8px;
+    padding: 3px;
+  }
+
+  .cntContact h1 {
+    font-size: 0.7rem;
+  }
+
+  .cntContact p {
+    font-size: 0.5rem;
+  }
+
+  .cntContact button {
+    width: 50px;
+    height: 18px;
+    font-size: 0.3rem;
+  }
+
+  .subCntCard {
+    gap: 0.6rem;
+  }
+
+  .social-link {
+    font-size: 0.7rem;
+    gap: 0.15rem;
   }
 
   .social-link .icon {
@@ -145,4 +478,3 @@
     height: 20px;
   }
 }
-

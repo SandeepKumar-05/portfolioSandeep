@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/ContactSection.css'
 export default function ContactSection() {
   return (
-    <section className='contSection'>
+    <section className='contSection' id='contact'>
       <div className="contMainBox">
         <div className="header">
           <h1>Contact with me sizzle your project.</h1>

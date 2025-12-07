@@ -5,7 +5,7 @@ import ScrollReveal from '../Animations/ScrollReveal'
 
 function AboutSection() {
   return (
-    <section className="aboutSection">
+    <section className="aboutSection" id='about'>
         <div className="aboutContent">
             <div className="aboutSubCont">
                 <ScrollReveal

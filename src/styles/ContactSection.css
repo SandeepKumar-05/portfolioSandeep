@@ -10,7 +10,7 @@
 }
 
 .contMainBox {
-    width: 1400px; /* Updated width */
+    width: 1100px; /* Updated width */
     max-width: 100%; /* Ensures it doesn't overflow on smaller screens */
     height: 500px;
     background: #CED1FA;
@@ -94,28 +94,30 @@
     background: #232323;
     color: var(--mainBg);
 }
-/* Responsive adjustments */
-@media (max-width: 1300px) {
-    .contMainBox {
-        width: 90%; /* Adjusts width on slightly smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .contSection {
-        padding: 4rem 3%;
-    }
-    .contMainBox {
-        height: 500px; /* Adjusted height for tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .contSection {
-        padding: 3rem 3%;
-    }
-    .contMainBox {
-        height: 400px; /* Adjusted height for mobile */
-        border-radius: 20px;
-    }
+  
+@media (max-width: 360px) {
+  .contSection {
+    padding: 0.6rem 0.5%;
+  }
+  .contMainBox {
+    height: 380px;
+  }
+  .header h1 {
+    font-size: 1rem;
+  }
+  .header p {
+    font-size: 0.5rem;
+  }
+  .details input {
+    max-width: 250px;
+    height: 18px;
+  }
+  .desc textarea {
+    max-width: 350px;
+    height: 80px;
+  }
+  .subButton button {
+    max-width: 360px;
+    height: 18px;
+  }
 }

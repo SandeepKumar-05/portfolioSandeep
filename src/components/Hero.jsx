@@ -4,7 +4,7 @@ import '../styles/Hero.css'; // We'll create this next
 import profilePic from '../assets/profilePic.jpg'
 const Hero = () => {
   return (
-    <section className="heroSection">
+    <section className="heroSection" id='home'>
       <div className="heroContent">
             <div className="typewriterContainer">
                 <h1>Hi ,I'm a</h1>

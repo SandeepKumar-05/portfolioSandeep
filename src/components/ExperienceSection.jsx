@@ -16,12 +16,14 @@ function ExperienceSection() {
         <div className="expContent">
           <div className="expIcon"><Briefcase size={40} /></div>
           <div className="expDetails">
-            <h3>AI & ML Intern — Aicrowd</h3>
+            <h3>AIDA Association</h3>
             <p>
-              Developed deep learning models for image classification and text analytics.
-              Improved accuracy through fine-tuning and data preprocessing.
+              Developer — Built and optimized responsive React interfaces, integrated APIs,
+              improved component performance, and contributed to scalable frontend
+              architecture using modern JavaScript and UI best practices.
             </p>
             <span className="expDuration">June 2024 – Aug 2024</span>
+
           </div>
         </div>
       </div>
@@ -31,11 +33,12 @@ function ExperienceSection() {
         <div className="expContent">
           <div className="expIcon"><Cpu size={40} /></div>
           <div className="expDetails">
-            <h3>Final Year Project — ISL Converter</h3>
-            <p>
-              Built a real-time <b>Indian Sign Language Converter</b> using YOLOv8, Python, and React.
-              Enabled bidirectional sign-to-text/speech and text/speech-to-sign translation.
-            </p>
+           <h3>Freelancer</h3>
+              <p>
+                Designed and developed AI-integrated web applications using React, Python, and modern  
+                machine learning frameworks. Built responsive UIs, optimized workflows, and delivered  
+                production-ready solutions for multiple clients.
+              </p>
             <span className="expDuration">2024 – 2025</span>
           </div>
         </div>
